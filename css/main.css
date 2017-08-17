@@ -96,8 +96,39 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.header {
+    margin: 0;
+    color: white;
+}
 
+.header-background {
+    background-image: url("https://source.unsplash.com/NROJUYgpjKE/5184x3456");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
 
+h2 {
+    font-family: 'Viga', sans-serif;
+}
+
+.header-container {
+    position: relative;
+    top: 15%;
+    left: 10%;
+    height: auto;
+    max-width: 60%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header-list {
+    list-style-type: none;
+}
+
+.header-list li {
+    display: inline;
+    padding: 5px;
+}
 
 
 
