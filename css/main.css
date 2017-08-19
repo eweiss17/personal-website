@@ -130,8 +130,44 @@ h2 {
     padding: 5px;
 }
 
+.about-container {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
 
+.about-container h2{
+    display: inline-block;
+}
 
+.left {
+    /*position: relative;*/
+    /*right: 40vw;*/
+}
+
+.right {
+    /*position: relative;*/
+    /*left: 40vw;*/
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.projects-container {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contact-container {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
 
 
 
