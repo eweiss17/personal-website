@@ -131,24 +131,37 @@ h2 {
 }
 
 .about-container {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0;
     height: 100vh;
     width: 100vw;
+    border-top: solid;
+    overflow: hidden;
 }
 
-.about-container h2{
-    display: inline-block;
+.about-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.flex-child {
+    margin: auto;
 }
 
 .left {
-    /*position: relative;*/
-    /*right: 40vw;*/
+    position: relative;
+    right: 12.5vw;
 }
 
 .right {
-    /*position: relative;*/
-    /*left: 40vw;*/
+    position: relative;
+    left: 12.5vw;
 }
 
 .no-margin {
