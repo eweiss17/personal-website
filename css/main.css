@@ -120,7 +120,9 @@ textarea {
 h2 {
     font-family: 'Viga', sans-serif;
 }
-
+.sidebar {
+grid-area: sidebar;
+}
 .lightning {
     grid-area: sidebar;
 }
@@ -151,6 +153,7 @@ h2 {
 .header-list li {
     display: inline;
     padding: 5px;
+    text-decoration: none;
 }
 
 .about-container {
