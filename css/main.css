@@ -155,6 +155,34 @@ h2 {
     /*text-align: center;*/
 }
 
+.ease-one {
+    position: relative;
+    right: 50px;
+    opacity: 0;
+}
+
+.ease-two {
+    position: relative;
+    right: 50px;
+    opacity: 0;
+}
+
+.ease-three {
+    position: relative;
+    right: 50px;
+    opacity: 0;
+}
+
+.ease-four {
+    position: relative;
+    right: 125px;
+    opacity: 0;
+}
+
+.ease-five {
+    opacity: 0;
+}
+
 .header-list ul {
     display: inline-block;
     list-style-type: none;
@@ -189,7 +217,7 @@ h2 {
     grid-template-columns: 48.75% 2.5% 48.75%;
     grid-template-rows: auto;
     grid-template-areas:
-        "header header header"
+        ". . ."
         "item1 . ."
         ". . item2"
         "item3 . ."
@@ -197,6 +225,7 @@ h2 {
         ". . .";
     grid-template-rows: auto;
     justify-items: center;
+    overflow: hidden;
 }
 
 .about-header {
@@ -205,40 +234,41 @@ h2 {
     grid-area: header;
 }
 
-.icon {
-    grid-area: icon;
-    background-color: black;
+.about-list {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.about-list li {
+    /*padding: 5px;*/
+}
+
+.box {
+    font-size: 1em;
+    min-width: 80%;
+    border-radius: 0.5em;
 }
 
 .about1 {
     grid-area: item1;
     background-color: rgba(50, 30, 150, 0.5);
-    min-width: 80%;
-    border-radius: 0.5em;
     justify-self: end;
 }
 
 .about2 {
     grid-area: item2;
     background-color: rgba(150, 200, 93, 0.5);
-    min-width: 80%;
-    border-radius: 0.5em;
     justify-self: start;
 }
 
 .about3 {
     grid-area: item3;
     background-color: rgba(100, 56, 200, 0.5);
-    min-width: 80%;
-    border-radius: 0.5em;
     justify-self: end;
 }
 
 .about4 {
     grid-area: item4;
     background-color: rgba(74, 74, 30, 0.5);
-    min-width: 80%;
-    border-radius: 0.5em;
     justify-self: start;
 }
 
@@ -252,7 +282,6 @@ h2 {
     margin: 0;
     height: 100vh;
     background-color: #555555;
-    /*width: 100vw;*/
     overflow: hidden;
 }
 
@@ -279,7 +308,6 @@ h2 {
     text-align: center;
     margin: 0;
     height: 100vh;
-    /*width: 100vw;*/
 }
 
 .form-container {
@@ -294,7 +322,25 @@ footer {
     width: 100%;
 }
 
+/*
+    =========================Media Queries=========================
+ */
 
+@media (max-width: 1000px) {
+    .about-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4";
+    }
+
+    .box {
+        min-width: 80%;
+    }
+}
 
 
 
