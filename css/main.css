@@ -223,9 +223,8 @@ h2 {
         "item3 . ."
         ". . item4"
         ". . .";
-    grid-template-rows: auto;
     justify-items: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .about-header {
@@ -246,17 +245,22 @@ h2 {
     font-size: 1em;
     min-width: 80%;
     border-radius: 0.5em;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
 }
 
 .about1 {
     grid-area: item1;
     background-color: rgba(50, 30, 150, 0.5);
     justify-self: end;
+
 }
 
 .about2 {
     grid-area: item2;
-    background-color: rgba(150, 200, 93, 0.5);
+    background-color: rgba(150, 210, 98, 0.5);
     justify-self: start;
 }
 
@@ -264,12 +268,22 @@ h2 {
     grid-area: item3;
     background-color: rgba(100, 56, 200, 0.5);
     justify-self: end;
+    display: grid;
 }
 
 .about4 {
     grid-area: item4;
-    background-color: rgba(74, 74, 30, 0.5);
+    background-color: rgba(155, 180, 83, 0.5);
     justify-self: start;
+}
+
+.image-block {
+    justify-self: center;
+    align-self: center;
+}
+.image-block img {
+    width: 100px;
+    height: 75px;
 }
 
 
@@ -278,24 +292,24 @@ h2 {
  */
 
 .projects-container {
+    padding: 2.5%;
     text-align: center;
     margin: 0;
-    height: 100vh;
     background-color: #555555;
-    overflow: hidden;
-}
-
-.projects-flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
 }
 
 .pen {
+    padding: 2.5%;
+    width: 80%;
     margin: auto;
-    width: 30%;
+}
+
+.pen-icons {
+    padding-top: 2.5%;
 }
 
 /*
@@ -328,17 +342,33 @@ footer {
 
 @media (max-width: 1000px) {
     .about-container {
-        grid-template-columns: 100%;
+        grid-template-columns: 5% 90% 5%;
         grid-template-rows: auto;
         grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4";
+            ". item1 ."
+            ". item2 ."
+            ". item3 ."
+            ". item4 .";
     }
 
     .box {
-        min-width: 80%;
+        min-width: 100%;
+    }
+    .about1 {
+        justify-self: center;
+
+    }
+
+    .about2 {
+        justify-self: center;
+    }
+
+    .about3 {
+        justify-self: center;
+    }
+
+    .about4 {
+        justify-self: center;
     }
 }
 
