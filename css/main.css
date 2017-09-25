@@ -106,8 +106,55 @@ textarea {
 }
 
 /*
+    =========================NAV=========================
+ */
+
+/*#menu {*/
+    /*position:fixed;*/
+    /*top:0px;*/
+    /*left: 10%;*/
+    /*width:80%;*/
+    /*height:50px;*/
+    /*color: #FFFFFF;*/
+    /*z-index:9999;*/
+    /*display: none;*/
+    /*background-color: rgba(211, 211, 211, 0.2);*/
+    /*border-radius: 0.5em;*/
+    /*border-style: solid;*/
+    /*border-color: whitesmoke;*/
+    /*left: 45%;*/
+/*}*/
+
+#menu  {
+    position:fixed;
+    top:0px;
+    left:40%;
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgba(211, 211, 211, 0.2);
+    padding: 10px;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: whitesmoke;
+    display: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 10px;
+    margin: auto;
+}
+
+#menu a {
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+
+/*
     =========================MAIN=========================
  */
+
 
 .header {
     margin: 0;
@@ -128,7 +175,7 @@ textarea {
     grid-template-rows: auto;
     grid-template-areas:
         "header header header header"
-        "main main . sidebar"
+        "main main sidebar sidebar"
         "footer footer footer footer";
     font-family: 'Montserrat Alternates', sans-serif;
     justify-items: center;
@@ -213,17 +260,20 @@ h2 {
     /*background-image: url("https://source.unsplash.com/iyfjDcAr_2g/5184x3456");*/
     background-size: 100% 100%;
     height: 100vh;
+}
+
+.about-grid {
+    height: 100%;
     display: grid;
     grid-template-columns: 48.75% 2.5% 48.75%;
     grid-template-rows: auto;
     grid-template-areas:
-        ". . ."
         "item1 . ."
         ". . item2"
         "item3 . ."
-        ". . item4"
-        ". . .";
+        ". . item4";
     justify-items: center;
+    align-items: center;
     /*overflow: hidden;*/
 }
 
@@ -341,7 +391,7 @@ footer {
  */
 
 @media (max-width: 1000px) {
-    .about-container {
+    .about-grid {
         grid-template-columns: 5% 90% 5%;
         grid-template-rows: auto;
         grid-template-areas:
