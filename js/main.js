@@ -26,7 +26,7 @@ $(document).ready(function() {
     }));
 
     //Not scrolling
-    $(window).scroll($.debounce( 250, function(){
+    $(window).scroll($.debounce( 1000, function(){
         if ($(this).scrollTop() > 400) {
             $('#menu').fadeIn(500);
         } else {
