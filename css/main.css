@@ -239,7 +239,7 @@ h2 {
 
 .about-container {
     margin: 0;
-    background: linear-gradient(top, #000000 20%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #292728, #FFFFFF 80%);
     /*background-image: url("https://source.unsplash.com/jBlynjgG5OM/5184x3456");*/
     /*background-image: url("https://source.unsplash.com/iyfjDcAr_2g/5184x3456");*/
     background-size: 100% 100%;
@@ -344,8 +344,8 @@ h2 {
 }
 
 #calc {
-    background-image: url("../img/UT_LOGO.gif");
-    background-size: cover;
+    background-image: url("../img/CODEPEN.png");
+    background-size: contain;
 }
 
 .pen-icons {
