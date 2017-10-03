@@ -338,14 +338,15 @@ h2 {
 .pen {
     cursor: pointer;
     border: 1px black solid;
-    padding: 2%;
-    width: 80%;
     margin: auto;
 }
 
 #calc {
     background-image: url("../img/CODEPEN.png");
     background-size: contain;
+}
+
+#wiki {
 }
 
 .pen-icons {
