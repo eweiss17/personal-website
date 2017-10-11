@@ -239,7 +239,7 @@ h2 {
 
 .about-container {
     margin: 0;
-    background: linear-gradient(to bottom, #292728, #FFFFFF 80%);
+    background: linear-gradient(to bottom, #292728, #FAFAFA 80%);
     /*background-image: url("https://source.unsplash.com/jBlynjgG5OM/5184x3456");*/
     /*background-image: url("https://source.unsplash.com/iyfjDcAr_2g/5184x3456");*/
     background-size: 100% 100%;
@@ -328,7 +328,8 @@ h2 {
     padding: 2.5%;
     text-align: center;
     margin: 0;
-    background-color: #555555;
+    background: linear-gradient(to bottom, #FAFAFA, #555555 40%);
+    /*background-color: #555555;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -341,9 +342,17 @@ h2 {
     margin: auto;
 }
 
+.pen a img {
+    height: 850px;
+    width: 1400px;
+    object-fit: cover;
+}
+
 #calc {
-    background-image: url("../img/CODEPEN.png");
-    background-size: contain;
+}
+
+#wiki {
+
 }
 
 #wiki {
