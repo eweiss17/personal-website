@@ -329,7 +329,6 @@ h2 {
     text-align: center;
     margin: 0;
     background: linear-gradient(to bottom, #FAFAFA, #555555 40%);
-    /*background-color: #555555;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,9 +342,9 @@ h2 {
 }
 
 .pen a img {
-    height: 850px;
+    /*height: 850px;*/
     width: 1400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #calc {
@@ -359,7 +358,7 @@ h2 {
 }
 
 .pen-icons {
-    /*padding-top: 2.5%;*/
+    margin: 2.5%;
 }
 
 /*
